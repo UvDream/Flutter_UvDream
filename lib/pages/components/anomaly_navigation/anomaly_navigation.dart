@@ -9,7 +9,6 @@ class _BottomNavigationButtonState extends State<BottomNavigationButton> {
   int _index=0;
  @override
   void initState() {
-      // TODO: implement initState
       super.initState();
       _eachView = List();
       _eachView..add(EachView('首页'))..add(EachView('关于'));

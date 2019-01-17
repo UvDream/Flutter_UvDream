@@ -6,7 +6,6 @@ class BottomNavigationWidget extends StatefulWidget {
 }
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
-  final _BottomNavigationColor = Colors.blue;
   int _currentIndex=0;
   var appBarTitle=["组件","关于"];
   var appBarIcon=[Icons.all_inclusive,Icons.blur_on];

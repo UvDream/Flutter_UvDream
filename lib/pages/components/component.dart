@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './bottom_navigation.dart';
-import './anomaly_navigation.dart';
+import './anomaly_navigation/anomaly_navigation.dart';
+import './appbar/appbar.dart';
 class ComponentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class ComponentsList extends StatelessWidget {
           new Divider(),
           new  ListTile(
               // 头部
-              leading:Icon(Icons.navigation),
+              leading:Text("1",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
               // 标题
               title: Text("导航栏组件",style:TextStyle(fontWeight:FontWeight.w500)),
               // 副标题
@@ -45,10 +46,10 @@ class ComponentsList extends StatelessWidget {
               }
             ), 
           new Divider(),
-              new ListTile(
+          new ListTile(
+              leading:Text("2",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
               title: Text("导航栏组件",style:TextStyle(fontWeight:FontWeight.w500)),
               subtitle: Text("中间嵌入的底部导航栏组件"),
-              leading:Icon(Icons.navigation),
               trailing: Icon(Icons.chevron_right),
               onTap: (){
                  Navigator.push(
@@ -58,7 +59,22 @@ class ComponentsList extends StatelessWidget {
                   )
                 );
               },
-          ),
+           ),
+          new Divider(),
+          new ListTile(
+              leading:Text("3",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              title: Text("AppBar Tabs",style:TextStyle(fontWeight:FontWeight.w500)),
+              subtitle: Text("悬浮在AppBar下面的tabs"),
+              trailing: Icon(Icons.chevron_right),
+              onTap: (){
+                 Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder:(context)=>new AppBarPage()
+                  )
+                );
+              },
+           ),
         ],
       ),
     );
