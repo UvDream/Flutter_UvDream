@@ -4,9 +4,9 @@
 
 ##ListTile
 
-![ListTile](./doc/ListTile.png)
+<img src="./doc/ListTile.png" width = "200"   />
 
 ##anomaly_navigation
 
-![anomaly_navigation](./doc/anomaly_navigation.png)
+<img src="./doc/anomaly_navigation.png" width = "200"  />
 
