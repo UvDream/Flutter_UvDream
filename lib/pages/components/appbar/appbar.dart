@@ -20,9 +20,9 @@ class AppBarPage extends StatelessWidget {
               unselectedLabelStyle: TextStyle(fontSize: 10),
               // 底部指示器的padding
               indicatorPadding: const EdgeInsets.all(0),
-              // 下划线高度
+              // 底部指示器高度
               indicatorWeight: 2,
-              //下划线颜色
+              //底部指示器颜色
               indicatorColor: Colors.red,
               // 指示器大小计算方式
               // indicatorSize: ,

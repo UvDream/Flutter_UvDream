@@ -6,7 +6,7 @@ class BottomNavigation extends StatelessWidget {
         appBar: new AppBar(
           title: new Text("导航组件"),
         ),
-        body:Text("导航组件")
+        body:Text("导航组件其实入口就是啦!请看lib目录下的bottom_navigation.dart文件")
     );
   }
 }
