@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './bottom_navigation.dart';
 import './anomaly_navigation/anomaly_navigation.dart';
 import './appbar/appbar.dart';
+import './router_animation/animation_list.dart';
 class ComponentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -71,6 +72,21 @@ class ComponentsList extends StatelessWidget {
                   context, 
                   MaterialPageRoute(
                     builder:(context)=>new AppBarPage()
+                  )
+                );
+              },
+           ),
+           new Divider(),
+            new ListTile(
+              leading:Text("4",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              title: Text("路由动画",style:TextStyle(fontWeight:FontWeight.w500)),
+              subtitle: Text("几种常用的路由动画"),
+              trailing: Icon(Icons.chevron_right),
+              onTap: (){
+                 Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder:(context)=>new AnimationListPage()
                   )
                 );
               },
