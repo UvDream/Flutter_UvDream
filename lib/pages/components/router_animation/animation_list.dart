@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import './gradient_animation.dart';
+import '../../test_bar_page.dart';
+import './zoom_animation.dart';
+import './zoom_rotate_animation.dart';
+import './slider_animation.dart';
 class AnimationListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("路由动画"),
-       
+        title: Text("路由动画"), 
       ),
       body: new Center(
         child: AnimationList(),
@@ -21,30 +25,38 @@ class AnimationList extends StatelessWidget {
       mainAxisSpacing: 4,
       crossAxisSpacing: 4,
       children: <Widget>[
-       RaisedButton(
-         child: Center(
-           child: Text("data"),
-         ),
-         onPressed: (){},
+       OutlineButton	(
+        child: Text("渐变效果"),
+        onPressed: (){
+          Navigator.of(context).push(
+            GradientRoute(TestBarPage())
+          );
+        },
        ),
-        RaisedButton(
-         child: Center(
-           child: Text("data"),
-         ),
-         onPressed: (){},
+        OutlineButton	(
+          child: Text("缩放效果"),
+          onPressed: (){
+            Navigator.of(context).push(
+              ZoomRoute(TestBarPage())
+            );
+          },
        ),
-       InkWell(
-
+       OutlineButton	(
+          child: Text("缩放+旋转效果"),
+          onPressed: (){
+            Navigator.of(context).push(
+              ZoomRotateRoute(TestBarPage())
+            );
+          },
        ),
-        Center(
-          child: Text("data"),
-        ),
-         Center(
-          child: Text("data"),
-        ),
-         Center(
-          child: Text("data"),
-        )
+         OutlineButton	(
+          child: Text("左右滑动"),
+          onPressed: (){
+            Navigator.of(context).push(
+              SlideRouter(TestBarPage())
+            );
+          },
+       ),
       ],
     );
   }
