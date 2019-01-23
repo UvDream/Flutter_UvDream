@@ -9,7 +9,7 @@ class RowColumnPage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Container(
-              height: 300,
+              height: 200,
               color: Colors.yellow,
               child: Row(
                 // 主轴(x)对齐方式
@@ -41,7 +41,7 @@ class RowColumnPage extends StatelessWidget {
               ),
             ),
                 Container(
-              height: 300,
+              height: 200,
               color: Colors.red,
               child: Column(
                 // 主轴(x)对齐方式
