@@ -3,6 +3,7 @@ import './bottom_navigation.dart';
 import './anomaly_navigation/anomaly_navigation.dart';
 import './appbar/appbar.dart';
 import './router_animation/animation_list.dart';
+import './row_column/row_column.dart';
 class ComponentPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,7 @@ class ComponentsList extends StatelessWidget {
               },
            ),
            new Divider(),
-            new ListTile(
+           new ListTile(
               leading:Text("4",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
               title: Text("路由动画",style:TextStyle(fontWeight:FontWeight.w500)),
               subtitle: Text("几种常用的路由动画"),
@@ -91,6 +92,23 @@ class ComponentsList extends StatelessWidget {
                 );
               },
            ),
+           new Divider(),
+            new ListTile(
+              leading:Text("5",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              title: Text("Row和Column",style:TextStyle(fontWeight:FontWeight.w500)),
+              subtitle: Text("水平/垂直布局"),
+              trailing: Icon(Icons.chevron_right),
+              onTap: (){
+                 Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder:(context)=>new RowColumnPage()
+                  )
+                );
+              },
+           ),
+           new Divider(),
+         
         ],
       ),
     );
