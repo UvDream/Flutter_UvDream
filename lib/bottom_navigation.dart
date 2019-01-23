@@ -7,7 +7,7 @@ class BottomNavigationWidget extends StatefulWidget {
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   int _currentIndex=0;
-  var appBarTitle=["组件","关于"];
+  var appBarTitle=["Demo","关于"];
   var appBarIcon=[Icons.all_inclusive,Icons.blur_on];
   List<Widget> list=List();
   // 导航栏文字选中颜色
