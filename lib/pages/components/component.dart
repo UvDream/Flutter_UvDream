@@ -5,6 +5,7 @@ import './appbar/appbar.dart';
 import './router_animation/animation_list.dart';
 import './row_column/row_column.dart';
 import './drawer/drawer.dart';
+import './button/button.dart';
 class ComponentPage extends StatelessWidget {
 
   @override
@@ -15,7 +16,9 @@ class ComponentPage extends StatelessWidget {
           title: new Text("官方组件示例"),
         ),
         body:new Center(
-          child: ComponentsList(),
+          child: SingleChildScrollView(
+              child:ComponentsList() ,
+          ),
         )
     );
   }
@@ -111,6 +114,14 @@ void _onTop(BuildContext context, String id){
             )
         );
         break;
+      case "7":
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder:(context)=>new ButtonPage()
+            )
+        );
+        break;
     }
 }
 
@@ -130,5 +141,28 @@ const List<Choice> ComponentsLists=const <Choice>[
   const Choice(title:"路由动画",subtitle:"常见的动画",indexs:"4",pages:BottomNavigation),
   const Choice(title:"Row/Column",subtitle:"水平/垂直布局",indexs:"5",pages:BottomNavigation),
   const Choice(title:"Drawer",subtitle:"侧边抽屉菜单栏",indexs:"6",pages:BottomNavigation),
+  const Choice(title:"Button",subtitle:"按钮",indexs:"7",pages:BottomNavigation),
+  const Choice(title:"PopupMenuButton",subtitle:"弹出式菜单列表",indexs:"8",pages:BottomNavigation),
+  const Choice(title:"ButtonBar",subtitle:"水平排列的按钮组",indexs:"8",pages:BottomNavigation),
+  const Choice(title:"TextField",subtitle:"文本输入框",indexs:"9",pages:BottomNavigation),
+  const Choice(title:"Checkbox",subtitle:"复选框",indexs:"10",pages:BottomNavigation),
+  const Choice(title:"Radio",subtitle:"单选框",indexs:"11",pages:BottomNavigation),
+  const Choice(title:"Switch",subtitle:"切换按钮",indexs:"12",pages:BottomNavigation),
+  const Choice(title:"Slider",subtitle:"滑块",indexs:"13",pages:BottomNavigation),
+  const Choice(title:"Date & Time Pickers",subtitle:"时间日期选择器",indexs:"14",pages:BottomNavigation),
+  const Choice(title:"SimpleDialog",subtitle:"简单的对话框",indexs:"15",pages:BottomNavigation),
+  const Choice(title:"AlertDialog",subtitle:"确认框",indexs:"16",pages:BottomNavigation),
+  const Choice(title:"BottomSheet",subtitle:"底部弹出框",indexs:"17",pages:BottomNavigation),
+  const Choice(title:"ExpansionPanel",subtitle:"未知",indexs:"18",pages:BottomNavigation),
+  const Choice(title:"SnackBar",subtitle:"轻量的在屏幕底部信息提示",indexs:"19",pages:BottomNavigation),
+  const Choice(title:"Image",subtitle:"图片组件",indexs:"20",pages:BottomNavigation),
+  const Choice(title:"Icon",subtitle:"小图标",indexs:"21",pages:BottomNavigation),
+  const Choice(title:"Chip",subtitle:"标签",indexs:"22",pages:BottomNavigation),
+  const Choice(title:"Tooltip",subtitle:"标签",indexs:"22",pages:BottomNavigation),
+  const Choice(title:"DataTable",subtitle:"标签",indexs:"22",pages:BottomNavigation),
+  const Choice(title:"Card",subtitle:"标签",indexs:"22",pages:BottomNavigation),
+  const Choice(title:"LinearProgressIndicator",subtitle:"标签",indexs:"22",pages:BottomNavigation),
+  const Choice(title:"Stepper",subtitle:"标签",indexs:"22",pages:BottomNavigation),
+  const Choice(title:"Divider",subtitle:"标签",indexs:"22",pages:BottomNavigation),
 ];
 

@@ -49,7 +49,6 @@ class DrawerPage extends StatelessWidget {
         backgroundImage: NetworkImage('http://94.191.31.210/img/avator.3f0253b7.png'),
       ),
       onDetailsPressed: () {
-        print("111");
       },
       otherAccountsPictures: <Widget>[
         new CircleAvatar(
