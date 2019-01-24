@@ -4,6 +4,7 @@ import './anomaly_navigation/anomaly_navigation.dart';
 import './appbar/appbar.dart';
 import './router_animation/animation_list.dart';
 import './row_column/row_column.dart';
+import './drawer/drawer.dart';
 class ComponentPage extends StatelessWidget {
 
   @override
@@ -102,6 +103,14 @@ void _onTop(BuildContext context, String id){
         )
       );
       break;
+      case "6":
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder:(context)=>new DrawerPage()
+            )
+        );
+        break;
     }
 }
 
@@ -120,5 +129,6 @@ const List<Choice> ComponentsLists=const <Choice>[
   const Choice(title:"AppBar Tabs",subtitle:"悬浮在AppBar下面的tabs",indexs:"3",pages:BottomNavigation),
   const Choice(title:"路由动画",subtitle:"常见的动画",indexs:"4",pages:BottomNavigation),
   const Choice(title:"Row/Column",subtitle:"水平/垂直布局",indexs:"5",pages:BottomNavigation),
+  const Choice(title:"Drawer",subtitle:"侧边抽屉菜单栏",indexs:"6",pages:BottomNavigation),
 ];
 
