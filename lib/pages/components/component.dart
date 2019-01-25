@@ -7,6 +7,7 @@ import './row_column/row_column.dart';
 import './drawer/drawer.dart';
 import './button/button.dart';
 import './text_field/text_field.dart';
+import './divider/divider.dart';
 class ComponentPage extends StatelessWidget {
 
   @override
@@ -130,6 +131,14 @@ void _onTop(BuildContext context, String id){
             context,
             MaterialPageRoute(
                 builder:(context)=>new TextFieldPage()
+            )
+        );
+        break;
+           case "22":
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder:(context)=>new DividerPage()
             )
         );
         break;
