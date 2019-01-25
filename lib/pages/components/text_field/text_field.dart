@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2019-01-25 10:28:43
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2019-01-25 17:15:42
+ * @LastEditTime: 2019-01-25 17:19:22
  * @Description: 输入框
  * @Email: uvdream@163.com
  */
@@ -60,6 +60,7 @@ class TextFieldPage extends StatelessWidget {
                             // 初始化的输入框比较高,这个解决高度
                           contentPadding: EdgeInsets.all(10.0),
                           labelText: "输入",
+                          hintText:"这就是那个啥",
                           helperText: "请输入你的输入",
                           border: OutlineInputBorder(
                             // 圆边角
