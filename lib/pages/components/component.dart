@@ -154,6 +154,7 @@ class Choice{
   final String indexs;
   final Object pages;
 }
+
 const List<Choice> ComponentsLists=const <Choice>[
   const Choice(title:"导航栏组件",subtitle:"常见导航栏组件",indexs:"1"),
   const Choice(title:"导航栏组件",subtitle:"中间嵌入的底部导航栏组件",indexs:"2"),
