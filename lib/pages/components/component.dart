@@ -174,7 +174,7 @@ const List<Choice> ComponentsLists=const <Choice>[
   const Choice(title:"Button",subtitle:"按钮",indexs:"7"),
   const Choice(title:"PopupMenuButton",subtitle:"弹出式菜单列表",indexs:"8"),
   const Choice(title:"TextField",subtitle:"文本输入框",indexs:"9"),
-  const Choice(title:"Checkbox",subtitle:"复选框",indexs:"10"),
+  const Choice(title:"Checkbox/CheckboxListTile",subtitle:"复选框",indexs:"10"),
   const Choice(title:"Radio",subtitle:"单选框",indexs:"11"),
   const Choice(title:"Switch",subtitle:"切换按钮",indexs:"12"),
   const Choice(title:"Slider",subtitle:"滑块",indexs:"13"),
