@@ -9,6 +9,8 @@ import './button/button.dart';
 import './text_field/text_field.dart';
 import './divider/divider.dart';
 import './checkbox/checkbox.dart';
+import './popup_menu_button/popup_menu_button.dart';
+import './radio/radio.dart';
 class ComponentPage extends StatelessWidget {
 
   @override
@@ -127,6 +129,14 @@ void _onTop(BuildContext context, String id){
             )
         );
         break;
+        case "8":
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder:(context)=>new PopupMenuButtonPage()
+            )
+        );
+        break;
           case "9":
         Navigator.push(
             context,
@@ -148,6 +158,14 @@ void _onTop(BuildContext context, String id){
             context,
             MaterialPageRoute(
                 builder:(context)=>new CheckBoxPage()
+            )
+        );
+        break;
+           case "11":
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder:(context)=>new RadioPage()
             )
         );
         break;
@@ -175,8 +193,7 @@ const List<Choice> ComponentsLists=const <Choice>[
   const Choice(title:"PopupMenuButton",subtitle:"弹出式菜单列表",indexs:"8"),
   const Choice(title:"TextField",subtitle:"文本输入框",indexs:"9"),
   const Choice(title:"Checkbox/CheckboxListTile",subtitle:"复选框",indexs:"10"),
-  const Choice(title:"Radio",subtitle:"单选框",indexs:"11"),
-  const Choice(title:"Switch",subtitle:"切换按钮",indexs:"12"),
+  const Choice(title:"Radio/Switch",subtitle:"单选框/状态切换",indexs:"11"),
   const Choice(title:"Slider",subtitle:"滑块",indexs:"13"),
   const Choice(title:"Date & Time Pickers",subtitle:"时间日期选择器",indexs:"14"),
   const Choice(title:"SimpleDialog",subtitle:"简单的对话框",indexs:"15"),
