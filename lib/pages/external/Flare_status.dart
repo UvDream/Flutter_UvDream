@@ -18,23 +18,23 @@ class _FlareStatusState extends State<FlareStatus> {
             child: FlareActor('flrs/animation_test.flr',
                 animation: _currentAnimation,
                 fit: BoxFit.contain, callback: (animationName) {
-              switch (animationName) {
-                case "tap":
-                  setState(() {
-                    _currentAnimation = "loading";
-                  });
-                  break;
-                case "success":
-                  setState(() {
-                    _currentAnimation = "normal";
-                  });
-                  break;
-                case "fail":
-                  setState(() {
-                    _currentAnimation = "normal";
-                  });
-                  break;
-              }
+                  switch (animationName) {
+                    case "tap":
+                      setState(() {
+                        _currentAnimation = "loading";
+                      });
+                      break;
+                    case "success":
+                      setState(() {
+                        _currentAnimation = "normal";
+                      });
+                      break;
+                    case "fail":
+                      setState(() {
+                        _currentAnimation = "normal";
+                      });
+                      break;
+                  }
             }),
             onTap: () {
               if (_currentAnimation == "normal") {

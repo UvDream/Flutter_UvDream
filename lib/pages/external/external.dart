@@ -1,6 +1,7 @@
 // import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import './Flare_status.dart';
+import './Success.dart';
 class ExternalPage extends StatefulWidget {
   @override
   _ExternalPageState createState() => _ExternalPageState();
@@ -57,6 +58,14 @@ void _onTop(BuildContext context, String id){
           )
         );
       break;
+         case "2":
+          Navigator.push(
+          context, 
+          MaterialPageRoute(
+            builder:(context)=>new SuccessPage()
+          )
+        );
+      break;
     }
 }
 class Choice{
@@ -69,4 +78,5 @@ class Choice{
 
 const List<Choice> DemoLists=const <Choice>[
   const Choice(title:"flare动画",subtitle:"flare动画使用方法",indexs:"1"),
+  const Choice(title:"flare成功动画",subtitle:"flare动画使用方法",indexs:"2"),
 ];
