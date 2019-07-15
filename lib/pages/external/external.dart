@@ -1,6 +1,7 @@
 // import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import './index.dart';
+import './iconfont.dart';
 class ExternalPage extends StatefulWidget {
   @override
   _ExternalPageState createState() => _ExternalPageState();
@@ -57,6 +58,14 @@ void _onTop(BuildContext context, String id){
           )
         );
       break;
+       case "2":
+          Navigator.push(
+          context, 
+          MaterialPageRoute(
+            builder:(context)=>new IconFontPage()
+          )
+        );
+      break;
        
     }
 }
@@ -70,4 +79,6 @@ class Choice{
 
 const List<Choice> DemoLists=const <Choice>[
   const Choice(title:"flare动画",subtitle:"flare动画使用方法",indexs:"1"),
+  const Choice(title:"IconFont",subtitle:"小图标",indexs:"2"),
+
 ];
