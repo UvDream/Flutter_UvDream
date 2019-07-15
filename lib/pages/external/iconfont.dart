@@ -9,9 +9,31 @@ class IconFontPage extends StatelessWidget {
           title: Text('IconFont'),
         ),
         body: SingleChildScrollView(
-          child: Icon(IconData(0xe64d, fontFamily: 'IconFont'),
-              size: 50),
-        ),
+          child: Wrap(
+            children: <Widget>[
+              Icon(
+                IconData(0xe64d,fontFamily: 'IconFont'),
+                size: 40,
+                color: Colors.red,
+              ),
+              Icon(
+                IconData(0xe650,fontFamily: 'IconFont'),
+                size: 40,
+                color: Colors.green,
+              ),
+              Icon(
+                IconData(0xe651,fontFamily: 'IconFont'),
+                size: 40,
+                color: Colors.blue,
+              ),
+              Icon(
+                IconData(0xe659,fontFamily: 'IconFont'),
+                size: 40,
+                color: Colors.black,
+              )
+            ],
+          ),
+        )
       ),
     );
   }
