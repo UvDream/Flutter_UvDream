@@ -2,7 +2,7 @@
 此项目主要代码演示各种常见的flutter组件
 
 
-文档解释
+相关文档:
 
 [Flutter组件一期文档](https://segmentfault.com/a/1190000017928399)
 
