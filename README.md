@@ -1,5 +1,6 @@
 #Flutter_UvDream
 
+[![GitHub status](https://img.shields.io/badge/status-10%25-brightgreen.svg)](https://github.com/UvDream/Flutter_UvDream)
 [![GitHub stars](https://img.shields.io/github/stars/UvDream/Flutter_UvDream.svg)](https://github.com/UvDream/Flutter_UvDream/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/UvDream/Flutter_UvDream.svg)](https://github.com/UvDream/Flutter_UvDream/network)
 [![GitHub issues](https://img.shields.io/github/issues/UvDream/Flutter_UvDream.svg)](https://github.com/UvDream/Flutter_UvDream/issues)
