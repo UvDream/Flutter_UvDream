@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import './index.dart';
 import './iconfont.dart';
+import './bessel_curve.dart';
 class ExternalPage extends StatefulWidget {
   @override
   _ExternalPageState createState() => _ExternalPageState();
@@ -66,6 +67,14 @@ void _onTop(BuildContext context, String id){
           )
         );
       break;
+       case "3":
+          Navigator.push(
+          context, 
+          MaterialPageRoute(
+            builder:(context)=>new BesselPage()
+          )
+        );
+      break;
        
     }
 }
@@ -80,5 +89,7 @@ class Choice{
 const List<Choice> DemoLists=const <Choice>[
   const Choice(title:"flare动画",subtitle:"flare动画使用方法",indexs:"1"),
   const Choice(title:"IconFont",subtitle:"小图标",indexs:"2"),
+  const Choice(title:"贝赛尔曲线",subtitle:"贝赛尔曲线应用",indexs:"3"),
+
 
 ];
