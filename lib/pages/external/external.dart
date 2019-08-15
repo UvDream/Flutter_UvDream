@@ -4,6 +4,7 @@ import './iconfont.dart';
 import './Flare_status.dart';
 import './bessel_curve.dart';
 import './wave_curve.dart';
+import './calendar.dart';
 
 class ExternalPage extends StatefulWidget {
   @override
@@ -69,6 +70,10 @@ void _onTop(BuildContext context, String id) {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => new WaveCurve()));
       break;
+    case "5":
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => new CalendarDemo()));
+      break;
   }
 }
 
@@ -85,4 +90,5 @@ const List<Choice> DemoLists = const <Choice>[
   const Choice(title: "IconFont", subtitle: "小图标", indexs: "2"),
   const Choice(title: "贝赛尔曲线", subtitle: "贝赛尔曲线应用", indexs: "3"),
   const Choice(title: "波浪贝赛尔曲线", subtitle: "贝赛尔曲线应用", indexs: "4"),
+  const Choice(title: "日历", subtitle: "calendar", indexs: "5"),
 ];
