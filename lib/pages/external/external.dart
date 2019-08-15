@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import './index.dart';
 import './iconfont.dart';
+import './Flare_status.dart';
+
 class ExternalPage extends StatefulWidget {
   @override
   _ExternalPageState createState() => _ExternalPageState();
@@ -26,59 +28,50 @@ class DemoList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(
-        children: DemoLists.map((Choice item){
-              return Column(
-                children: <Widget>[
-                  ListTile(
-                      // 头部
-                      leading: Text(item.indexs),
-                      // 标题
-                      title: Text(item.title),
-                      // 副标题
-                      subtitle: Text(item.subtitle),
-                      // 后缀
-                      trailing: Icon(Icons.chevron_right),
-                      onTap:()=>_onTop(context,item.indexs)
-                  ),
-                  new Divider()
-                ],
-              );
+        children: DemoLists.map((Choice item) {
+          return Column(
+            children: <Widget>[
+              ListTile(
+                  // 头部
+                  leading: Text(item.indexs),
+                  // 标题
+                  title: Text(item.title),
+                  // 副标题
+                  subtitle: Text(item.subtitle),
+                  // 后缀
+                  trailing: Icon(Icons.chevron_right),
+                  onTap: () => _onTop(context, item.indexs)),
+              new Divider()
+            ],
+          );
         }).toList(),
       ),
     );
   }
 }
-void _onTop(BuildContext context, String id){
-    switch(id){
-         case "1":
-          Navigator.push(
-          context, 
-          MaterialPageRoute(
-            builder:(context)=>new indexPage()
-          )
-        );
+
+void _onTop(BuildContext context, String id) {
+  switch (id) {
+    case "1":
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => new FlareStatus()));
       break;
-       case "2":
-          Navigator.push(
-          context, 
-          MaterialPageRoute(
-            builder:(context)=>new IconFontPage()
-          )
-        );
+    case "2":
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => new IconFontPage()));
       break;
-       
-    }
+  }
 }
-class Choice{
-  const Choice({this.title,this.subtitle,this.indexs,this.pages});
+
+class Choice {
+  const Choice({this.title, this.subtitle, this.indexs, this.pages});
   final String title;
   final String subtitle;
   final String indexs;
   final Object pages;
 }
 
-const List<Choice> DemoLists=const <Choice>[
-  const Choice(title:"flare动画",subtitle:"flare动画使用方法",indexs:"1"),
-  const Choice(title:"IconFont",subtitle:"小图标",indexs:"2"),
-
+const List<Choice> DemoLists = const <Choice>[
+  const Choice(title: "flare动画", subtitle: "flare动画使用方法", indexs: "1"),
+  const Choice(title: "IconFont", subtitle: "小图标", indexs: "2"),
 ];
