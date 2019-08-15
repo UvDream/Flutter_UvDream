@@ -21,7 +21,6 @@ class _BtnFlareState extends State<BtnFlare> {
               animation: _currentAnimation,
               fit: BoxFit.contain,
               callback: (animationName) {
-                print(animationName);
                 switch (animationName) {
                   case "tap":
                     break;
