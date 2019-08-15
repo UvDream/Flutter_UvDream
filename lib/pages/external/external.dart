@@ -1,14 +1,10 @@
 // import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import './index.dart';
 import './iconfont.dart';
-<<<<<<< HEAD
 import './Flare_status.dart';
-
-=======
 import './bessel_curve.dart';
 import './wave_curve.dart';
->>>>>>> 087b66dcbe5f7e5e8214569dd050591a94a6a49a
+
 class ExternalPage extends StatefulWidget {
   @override
   _ExternalPageState createState() => _ExternalPageState();
@@ -65,21 +61,13 @@ void _onTop(BuildContext context, String id) {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => new IconFontPage()));
       break;
-       case "3":
-          Navigator.push(
-          context, 
-          MaterialPageRoute(
-            builder:(context)=>new BesselPage()
-          )
-        );
+    case "3":
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => new BesselPage()));
       break;
-      case "4":
-          Navigator.push(
-          context, 
-          MaterialPageRoute(
-            builder:(context)=>new WaveCurve()
-          )
-        );
+    case "4":
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => new WaveCurve()));
       break;
   }
 }
@@ -93,8 +81,8 @@ class Choice {
 }
 
 const List<Choice> DemoLists = const <Choice>[
-   const Choice(title:"flare动画",subtitle:"flare动画使用方法",indexs:"1"),
-  const Choice(title:"IconFont",subtitle:"小图标",indexs:"2"),
-  const Choice(title:"贝赛尔曲线",subtitle:"贝赛尔曲线应用",indexs:"3"),
-  const Choice(title:"波浪贝赛尔曲线",subtitle:"贝赛尔曲线应用",indexs:"4"),
+  const Choice(title: "flare动画", subtitle: "flare动画使用方法", indexs: "1"),
+  const Choice(title: "IconFont", subtitle: "小图标", indexs: "2"),
+  const Choice(title: "贝赛尔曲线", subtitle: "贝赛尔曲线应用", indexs: "3"),
+  const Choice(title: "波浪贝赛尔曲线", subtitle: "贝赛尔曲线应用", indexs: "4"),
 ];
