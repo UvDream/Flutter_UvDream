@@ -52,6 +52,7 @@ class DemoList extends StatelessWidget {
   }
 }
 
+// 点击事件
 void _onTop(BuildContext context, String id) {
   var url;
   var list = {
@@ -63,22 +64,6 @@ void _onTop(BuildContext context, String id) {
   };
   url = list["$id"];
   Navigator.push(context, MaterialPageRoute(builder: (context) => url));
-  // switch (id) {
-  //   case "1":
-  //     break;
-  //   case "2":
-  //     url = IconFontPage();
-  //     break;
-  //   case "3":
-  //     url = BesselPage();
-  //     break;
-  //   case "4":
-  //     url = WaveCurve();
-  //     break;
-  //   case "5":
-  //     url = CalendarDemo();
-  //     break;
-  // }
 }
 
 class Choice {
