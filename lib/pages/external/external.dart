@@ -54,24 +54,31 @@ class DemoList extends StatelessWidget {
 
 void _onTop(BuildContext context, String id) {
   var url;
-  switch (id) {
-    case "1":
-      url = new FlareStatus();
-      break;
-    case "2":
-      url = IconFontPage();
-      break;
-    case "3":
-      url = BesselPage();
-      break;
-    case "4":
-      url = WaveCurve();
-      break;
-    case "5":
-      url = CalendarDemo();
-      break;
-  }
+  var list = {
+    "1": FlareStatus(),
+    "2": IconFontPage(),
+    "3": BesselPage(),
+    "4": WaveCurve(),
+    "5": CalendarDemo()
+  };
+  url = list["$id"];
   Navigator.push(context, MaterialPageRoute(builder: (context) => url));
+  // switch (id) {
+  //   case "1":
+  //     break;
+  //   case "2":
+  //     url = IconFontPage();
+  //     break;
+  //   case "3":
+  //     url = BesselPage();
+  //     break;
+  //   case "4":
+  //     url = WaveCurve();
+  //     break;
+  //   case "5":
+  //     url = CalendarDemo();
+  //     break;
+  // }
 }
 
 class Choice {
