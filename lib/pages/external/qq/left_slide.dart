@@ -11,7 +11,7 @@ class _LeftSlideState extends State<LeftSlide> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SlideListPage'),
+        title: Text('仿qq侧滑'),
       ),
       body: ListView.builder(itemBuilder: (context, index) {
         return SlideItem(
