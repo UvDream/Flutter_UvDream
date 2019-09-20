@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'bottom_navigation.dart';
-import './pages/external/calendar.dart';
 
 void main() => runApp(MyApp());
 
