@@ -5,6 +5,7 @@ import './Flare_status.dart';
 import './bessel_curve.dart';
 import './wave_curve.dart';
 import './calendar.dart';
+import './qq/left_slide.dart';
 
 class ExternalPage extends StatefulWidget {
   @override
@@ -60,7 +61,8 @@ void _onTop(BuildContext context, String id) {
     "2": IconFontPage(),
     "3": BesselPage(),
     "4": WaveCurve(),
-    "5": CalendarDemo()
+    "5": CalendarDemo(),
+    "6": LeftSlide()
   };
   url = list["$id"];
   Navigator.push(context, MaterialPageRoute(builder: (context) => url));
@@ -80,4 +82,5 @@ const List<Choice> DemoLists = const <Choice>[
   const Choice(title: "贝赛尔曲线", subtitle: "贝赛尔曲线应用", indexs: "3"),
   const Choice(title: "波浪贝赛尔曲线", subtitle: "贝赛尔曲线应用", indexs: "4"),
   const Choice(title: "日历", subtitle: "calendar", indexs: "5"),
+  const Choice(title: "仿qq左滑", subtitle: "qq", indexs: "6"),
 ];
